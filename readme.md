@@ -1,2 +1,2 @@
 pwa project unistra
-repo: github pwa 16:40
+repo: github pwa 17.24
