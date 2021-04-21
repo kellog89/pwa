@@ -3,7 +3,7 @@
 	"short_name": "chatty",
 	"description": "Send messages to and from your multiple identities!",
 	"start_url": "/",
-	"scope": "/",
+
 	"background_color": "#3367D6",
 	"theme_color": "#3367D6",
 	"display": "standalone",
