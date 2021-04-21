@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    h1 {
-      text-align: center;
-    }
-  </style>
+    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3367D6"/>
+    <link rel="apple-touch-icon" href="assets/images/logo/logo-192.png">
+    <link rel="canonical" href="https://chatty.meadowlandstudios.fr"/>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Chatty</title>
 </head>
 <body>
-  <h1>test git index.html 17.27</h1>
+    <button id="install_button" hidden>
+        <p>
+            Install Chatty
+        </p>
+        <img src="assets/images/logo/logo-192.png" height="80" width="80" alt="">
+    </button>
+    <nav>
+        <section id="logo">
+            <h1>Chatty</h1>
+        </section>
+        <section id="links">
+            <ul>
+                <li id="logout">Log out</li>
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <section class="welcomeScreen">
+            <form>
+                <div class="nameInputDiv">
+                    <label for="nameInput">Enter your name: </label>
+                    <input id="nameInput" type="text">
+                </div>
+                <div id="checkboxes">
+                    <div class="checkboxInputDiv">
+                        <input type="checkbox" id="notificationsPermissionCheckbox">
+                        <label for="notificationsPermissionCheckbox">Enable notifications</label>
+                    </div>
+                    <div class="checkboxInputDiv">
+                        <input type="checkbox" id="termsAndConditionsCheckbox">
+                        <label for="termsAndConditionsCheckbox">I accept the terms and conditions</label>
+                    </div>
+                </div>
+                <button id="startChattingButton">Start chatty</button>
+            </form>
+        </section>
+        <section class="chatScreen">
+            <section class="log">
+            </section>
+            <footer>
+                <input type="text" id="messageContent">
+                <button id="sendMessage">Send</button>
+                <div id="status">You are offline</div>
+            </footer>
+        </section>
+    </main>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+
+    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

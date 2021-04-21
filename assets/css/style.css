@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	padding: 3vh 3vw;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li {
+	list-style: none;
+	cursor: pointer;
+}
+
+button,
+input {
+	outline: none;
+	border: none;
+}
+
+#install_button {
+	display: flex;
+	cursor: pointer;
+	height: 30px;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	padding: 5px 15px;
+	font-family: inherit;
+	border-radius: 5px;
+	color: white;
+	background-color: lightblue;
+}
+
+.welcomeScreen {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.welcomeScreen form {
+	display: flex;
+	flex-direction: column;
+	justify-items: space-around;
+	background-color: #202020;
+	color: gainsboro;
+	padding: 20px;
+	gap: 1vh;
+	width: fit-content;
+	margin-top: 10vh;
+	border-radius: 10px;
+}
+
+.welcomeScreen form .nameInputDiv {
+	display: flex;
+	flex-direction: column;
+}
+
+.welcomeScreen form .checkboxInputDiv {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: small;
+}
+
+.welcomeScreen form .nameInputDiv input {
+	border-radius: 5px;
+	padding: 5px 15px;
+}
+
+.welcomeScreen form button {
+	padding: 0.5rem;
+	background-color: salmon;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.chatScreen {
+	display: none;
+	width: 100%;
+	max-width: 800px;
+	gap: 10px;
+}
+
+.log {
+	background-color: wheat;
+	border-radius: 10px;
+	padding: 3vh 3vw;
+	height: 70vh;
+	overflow: auto;
+}
+
+.message {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.message .messageContent {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	margin: 5px 0;
+}
+
+.message .img {
+	background-color: #202020;
+	color: white;
+	display: flex;
+	text-transform: uppercase;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+.message .content .time {
+	color: gray;
+	font-size: 0.7rem;
+	font-weight: 100;
+}
+
+.message .content .text {
+	background-color: white;
+	padding: 2px 10px;
+	border-radius: 20px;
+}
+
+#checkboxes {
+	margin: 10px 0;
+}
+
+label {
+	margin-left: 5px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: wheat;
+	gap: 10px;
+	border-radius: 10px;
+}
+
+footer button {
+	color: white;
+	cursor: pointer;
+	border: none;
+	font-family: inherit;
+	padding: 5px 15px;
+	border-radius: 10px;
+	background-color: lightblue;
+}
+
+footer input {
+	width: 100%;
+	border: none;
+	padding: 7px 10px;
+	border-radius: 10px;
+	outline: none;
+}
+.offline {
+	background-color: blueviolet;
+}
+.statusOnline {
+	display: none;
+}
+.statusOffline {
+	display: block;
+}
